@@ -1,0 +1,67 @@
+.hero__wrapper {
+   position: relative;
+}
+.hero {
+    padding: 35rem 0 10rem;
+    position: relative;
+}
+.title {
+    position: relative;
+    margin-bottom: 5rem;
+}
+.title::before {
+    position: absolute;
+    display: block;
+    content: '';
+    left: 50%;
+    bottom: -2rem;
+    width: 25rem;
+    height: 0.2rem;
+    background-color: var(--fourth-brand-color);
+    transform: translate(-50%, 0);
+}
+
+.hero .btn {
+    margin-bottom: 15rem;
+}
+.hero .img {
+    margin-bottom: 0;
+    
+}
+.hero__img-box {
+    position: relative;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+.hero__img-box::before {
+   display: block;
+   content: '';
+   width: 130%;
+   padding-top: 130%;
+   background-color: var(--second-brand-color);
+   position: absolute;
+   z-index: -1;
+   bottom: -10rem;
+   left: 50%;
+   transform: translate(-50%,0);
+   border-radius: 50%;
+}
+.hero__img-box::after {
+    pointer-events: none;
+    display: block;
+    content: '';
+    width:180%;
+    padding-top:180%;
+    position: absolute;
+    bottom: -10rem;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%,0);
+    background-image: url('../img/leaves2.png');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center bottom;
+ }
+@media screen and (min-width: 1024px)  {
+
+}
